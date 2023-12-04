@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import com.fajar.jetheroes.data.HeroRepository
 import com.fajar.jetheroes.model.Hero
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 
 class JetHeroesViewModel(private val repository: HeroRepository) : ViewModel() {
     private val _groupedHeroes = MutableStateFlow(
